@@ -1,0 +1,79 @@
+/* Fondo de pantalla y estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+}
+
+.informes_periciales-title {
+    position: absolute;
+    margin-left: 0px; 
+    margin-top: 0px;
+    top: 15px; /* Ajusta para desplazar hacia abajo */
+    transform: translateX(-60%); /* Centra horizontalmente */
+    text-align: center;
+        font-size: 24px;
+        color: #fff;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 10%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+}
+
+/* Estilos para los campos de entrada */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #a1a5b0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: #2d3e50;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #a1a5b0;
+}
+
+/* Botón de crear nuevo informe */
+.nuevo-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0d1b2a;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nuevo-button:hover {
+    background-color: #a1a5b0;
+    color: #fff;
+}
